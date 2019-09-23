@@ -1,0 +1,9 @@
+description: "Some parameters are missing or badly entered."
+headers:
+  - $ref: "#/components/headers/Limit"
+  - $ref: "#/components/headers/Remaining"
+  - $ref: "#/components/headers/Reset"
+content:
+  application/json:
+    schema:
+      $ref: "#/components/schemas/CustomError"

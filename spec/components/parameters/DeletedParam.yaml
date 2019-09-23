@@ -3,5 +3,5 @@ in: "query"
 description: "Get all, deleted, not deleted data. Default not deleted."
 required: false
 schema:
-  $ref: "#/parameters/Deleted"
+  $ref: "#/components/schemas/Deleted"
   default: ACTIVE
