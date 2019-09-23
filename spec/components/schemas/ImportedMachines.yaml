@@ -1,0 +1,15 @@
+description: Machine imported from SAGE.
+type: object
+properties:
+  id:
+    type: integer
+    format: int32
+  identification:
+    type: string
+  MachineId:
+    type: integer
+    format: int32
+  reviewed:
+    type: boolean
+  refContract:
+    type: string
