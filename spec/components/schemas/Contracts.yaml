@@ -7,7 +7,7 @@ properties:
   machines:
     type: array
     items:
-      $ref: '#/definitions/Machines'
+      $ref: "#/definitions/Machines"
   client:
     type: string
   identification:
@@ -20,7 +20,7 @@ properties:
     format: date
   reconduction:
     type: string
-    format: ''
+    format: ""
   loyer:
     type: number
     format: float

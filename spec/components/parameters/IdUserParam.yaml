@@ -1,0 +1,7 @@
+name: "IdUserParam"
+description: "id of user to get information only from it"
+in: "query"
+required: false
+schema:
+  type: "integer"
+  format: "int64"

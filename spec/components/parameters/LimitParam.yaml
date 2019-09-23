@@ -1,0 +1,7 @@
+name: "LimitParam"
+description: "max records to return"
+in: "query"
+required: true
+schema:
+  type: "integer"
+  format: "int32"

@@ -1,0 +1,6 @@
+name: "MetadataParam"
+description: "If metadata is needed (for pagination controls)"
+in: "query"
+required: false
+schema:
+  type: "boolean"

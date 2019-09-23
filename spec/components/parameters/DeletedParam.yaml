@@ -1,0 +1,7 @@
+name: "DeletedParam"
+in: "query"
+description: "Get all, deleted, not deleted data. Default not deleted."
+required: false
+schema:
+  $ref: "#/parameters/Deleted"
+  default: ACTIVE

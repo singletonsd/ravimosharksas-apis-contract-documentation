@@ -1,0 +1,7 @@
+name: "SkipParam"
+description: "number of item to skip"
+in: "query"
+required: true
+schema:
+  type: "integer"
+  format: "int32"

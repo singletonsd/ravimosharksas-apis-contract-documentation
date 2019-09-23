@@ -1,0 +1,6 @@
+name: "FilterParam"
+description: "filter data."
+in: "query"
+required: false
+schema:
+  type: "string"
