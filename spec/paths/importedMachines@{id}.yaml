@@ -37,10 +37,7 @@ delete:
       content:
         application/json:
           schema:
-            properties:
-              id:
-                type: "integer"
-                format: "int64"
+            $ref: "#/components/schemas/IdInteger"
     400:
       $ref: "#/components/responses/400"
     401:

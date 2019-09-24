@@ -1,6 +1,6 @@
 # RavimoShark API Contracts OpenAPI Specification
 
-> The **main repository** is hosted in [gitlab.com/ravimosharksas/apis/contract/documentation](https://gitlab.com/ravimosharksas/apis/contract/documentation.git) but it is automatically mirrored to [github.com](https://github.com/singletonsd/ravimosharksas-apis-contract-documentation.git) and to [gitlab.com/singletonsd/ravimosharksas/apis/contract/documentation](https://gitlab.com/singletonsd/ravimosharksas/apis/contract/documentation.git). If you are in the Github page it may occur that is not updated to the last version.
+> The **main repository** is hosted in [gitlab.com/ravimosharksas](https://gitlab.com/ravimosharksas/apis/contract/documentation.git) but it is automatically mirrored to [github.com/RavimoShark](https://github.com/RavimoShark/apis-contract-documentation.git), [github.com/singletonsd](https://github.com/singletonsd/ravimosharksas-apis-contract-documentation.git), [github.com/patoperpetua](https://github.com/patoperpetua/ravimosharksas-apis-contract-documentation.git), [gitlab.com/singletonsd](https://gitlab.com/singletonsd/ravimosharksas/apis/contract/documentation.git) and to [gitlab.com/patoperpetua](https://gitlab.com/patoperpetua/ravimosharksas-apis-contract-documentation.git), [github.com/patoperpetua](https://github.com/patoperpetua/ravimosharksas-apis-contract-documentation.git). If you are in the Github page it may occur that is not updated to the last version.
 
 ## PROJECT INFORMATION
 

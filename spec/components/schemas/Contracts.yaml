@@ -3,7 +3,7 @@ type: object
 properties:
   refContract:
     type: integer
-    format: int32
+    format: int64
   machines:
     type: array
     items:

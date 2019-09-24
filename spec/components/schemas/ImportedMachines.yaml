@@ -3,12 +3,12 @@ type: object
 properties:
   id:
     type: integer
-    format: int32
+    format: int64
   identification:
     type: string
   MachineId:
     type: integer
-    format: int32
+    format: int64
   reviewed:
     type: boolean
   refContract:

@@ -5,6 +5,7 @@
   "private": true,
   "scripts": {
     "start": "swagger-repo serve",
+    "clear-watcher": "echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p",
     "static": "npm run build && ./node_modules/.bin/static dist",
     "build": "swagger-repo build -o dist",
     "test": "swagger-repo validate",

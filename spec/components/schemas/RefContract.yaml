@@ -1,0 +1,6 @@
+description: Contract's reference.
+type: object
+properties:
+  refContract:
+    type: integer
+    format: int64
