@@ -1,14 +1,20 @@
 {
   "name": "ravimoshark-api-contracts",
   "version": "1.0.0",
-  "dependencies": {
-    "swagger-repo": "^2.0.0-rc.15"
-  },
+  "dependencies": {},
   "private": true,
   "scripts": {
     "start": "swagger-repo serve",
-    "build": "swagger-repo build -o web_deploy",
+    "static": "npm run build && ./node_modules/.bin/static dist",
+    "build": "swagger-repo build -o dist",
     "test": "swagger-repo validate",
-    "gh-pages": "swagger-repo gh-pages"
+    "gh-pages": "rm -rf web_deploy && mkdir -p web_deploy && cp -r dist/* web_deploy && swagger-repo gh-pages",
+    "swagger-repo": "swagger-repo",
+    "create-openapi-repo": "create-openapi-repo"
+  },
+  "devDependencies": {
+    "create-openapi-repo": "^2.0.0-rc.7",
+    "node-static": "0.7.11",
+    "swagger-repo": "2.0.0-rc.15"
   }
 }

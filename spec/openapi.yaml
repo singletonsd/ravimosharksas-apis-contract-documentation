@@ -1,62 +1,38 @@
 openapi: 3.0.0
 info:
   version: 1.0.0
-  title: Example.com
-  termsOfService: 'https://example.com/terms/'
+  title: Ravimoshark Contract API
+  termsOfService: 'https://ravimoshark.com/terms/'
   contact:
-    email: contact@example.com
-    url: 'http://example.com/contact'
+    email: dev@ravimoshark.com
+    url: 'http://ravimoshark.com/contact'
   license:
     name: Apache 2.0
     url: 'http://www.apache.org/licenses/LICENSE-2.0.html'
-  x-logo:
-    url: 'https://apis.guru/openapi-template/logo.png'
   description: >
-    This is an **example** API to demonstrate features of OpenAPI specification
+    This is an API to interact with Ravimoshark contracts database.
 
     # Introduction
 
-    This specification is intended to to be a good starting point for describing
-    your API in 
+    This API allow to create, modify and delete contracts and machines. It also
+    interacts with machines imported from SAGE database.
 
-    [OpenAPI/Swagger
-    format](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md).
+    # User Authentication
 
-    It also demonstrates features of
-    [generator-openapi-repo](https://github.com/Rebilly/generator-openapi-repo)
-    tool and 
-
-    [ReDoc](https://github.com/Rebilly/ReDoc) documentation engine. So beyond
-    the standard OpenAPI syntax we use a few 
-
-    [vendor
-    extensions](https://github.com/Rebilly/ReDoc/blob/master/docs/redoc-vendor-extensions.md).
-
-
-    # OpenAPI Specification
-
-    The goal of The OpenAPI Specification is to define a standard,
-    language-agnostic interface to REST APIs which
-
-    allows both humans and computers to discover and understand the capabilities
-    of the service without access to source
-
-    code, documentation, or through network traffic inspection. When properly
-    defined via OpenAPI, a consumer can 
-
-    understand and interact with the remote service with a minimal amount of
-    implementation logic. Similar to what
-
-    interfaces have done for lower-level programming, OpenAPI removes the
-    guesswork in calling the service.
+    This API does not contain any kind of user validation but It request to have
+    a valid authentication user to interact with it.
+    For more information about user Authentication, please refer to
+    [Ravimoshark User Authentication](https://ravimoshark.com/back/apis/auth/latest).
 externalDocs:
-  description: Find out how to create Github repo for your OpenAPI spec.
-  url: 'https://github.com/Rebilly/generator-openapi-repo'
+  description: Find out how to interact with Ravimoshark's APIs.
+  url: 'https://ravimoshark.com/back/apis/auth/latest'
 tags:
-  - name: Echo
-    description: Example echo operations
-  - name: User
-    description: Operations about user
+  - name: Contracts
+    description: Operations about contracts.
+  - name: Machines
+    description: Operations about machines.
+  - name: ImportedMachines
+    description: Operations about imported machines.
 servers:
-  - url: 'http://example.com/api/v1'
-  - url: 'https://example.com/api/v1'
+  - url: 'http://localhost:8000/api/v1'
+  - url: 'https://ravimoshark.com/back/apis/contract/v1'
