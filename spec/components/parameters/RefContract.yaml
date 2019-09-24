@@ -1,4 +1,4 @@
-name: "IdParam"
+name: "refContract"
 description: "id to delete or search"
 in: "path"
 required: true

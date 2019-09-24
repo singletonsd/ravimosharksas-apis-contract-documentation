@@ -5,12 +5,12 @@ get:
   description: "Get all machines."
   operationId: "getMachines"
   parameters:
-    - $ref: "#/components/parameters/SkipParam"
-    - $ref: "#/components/parameters/LimitParam"
-    - $ref: "#/components/parameters/OrderByParam"
-    - $ref: "#/components/parameters/FilterParam"
-    - $ref: "#/components/parameters/DeletedParam"
-    - $ref: "#/components/parameters/MetadataParam"
+    - $ref: "#/components/parameters/Skip"
+    - $ref: "#/components/parameters/Limit"
+    - $ref: "#/components/parameters/OrderBy"
+    - $ref: "#/components/parameters/Filter"
+    - $ref: "#/components/parameters/Deleted"
+    - $ref: "#/components/parameters/Metadata"
   responses:
     200:
       description: "Request OK."

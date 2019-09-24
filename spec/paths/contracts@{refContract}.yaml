@@ -1,11 +1,11 @@
 get:
   tags:
-    - "Machines"
-  summary: "Get one Machine."
-  description: "Get one machine."
-  operationId: "getMachineById"
+    - "Contracts"
+  summary: "Get one contract."
+  description: "Get one contract."
+  operationId: "getContractById"
   parameters:
-    - $ref: "#/components/parameters/Id"
+    - $ref: "#/components/parameters/RefContract"
     - $ref: "#/components/parameters/Deleted"
   responses:
     200:
@@ -13,7 +13,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: "#/components/schemas/Machines"
+            $ref: "#/components/schemas/Contracts"
     400:
       $ref: "#/components/responses/400"
     401:
@@ -22,15 +22,15 @@ get:
       $ref: "#/components/responses/404"
     405:
       $ref: "#/components/responses/405"
-  x-swagger-router-controller: "Machines"
+  x-swagger-router-controller: "Contracts"
 delete:
   tags:
-    - "Machines"
-  summary: "Delete one machine."
-  description: "Delete one machine."
-  operationId: "deleteMachine"
+    - "Contracts"
+  summary: "Delete one contract."
+  description: "Delete one contract."
+  operationId: "deleteContract"
   parameters:
-    - $ref: "#/components/parameters/Id"
+    - $ref: "#/components/parameters/RefContract"
   responses:
     200:
       description: "Request OK."
@@ -49,4 +49,4 @@ delete:
       $ref: "#/components/responses/404"
     405:
       $ref: "#/components/responses/405"
-  x-swagger-router-controller: "Machines"
+  x-swagger-router-controller: "Contracts"

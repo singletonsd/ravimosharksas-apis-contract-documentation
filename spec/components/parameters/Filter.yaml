@@ -1,4 +1,4 @@
-name: "FilterParam"
+name: "filterBy"
 description: "filter data."
 in: "query"
 required: false

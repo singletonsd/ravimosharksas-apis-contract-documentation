@@ -1,4 +1,4 @@
-name: "IdUserParam"
+name: "idUser"
 description: "id of user to get information only from it"
 in: "query"
 required: false

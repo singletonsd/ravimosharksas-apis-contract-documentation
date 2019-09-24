@@ -5,12 +5,12 @@ get:
   description: "Get all contracts."
   operationId: "getContracts"
   parameters:
-    - $ref: "#/components/parameters/SkipParam"
-    - $ref: "#/components/parameters/LimitParam"
-    - $ref: "#/components/parameters/OrderByParam"
-    - $ref: "#/components/parameters/FilterParam"
-    - $ref: "#/components/parameters/DeletedParam"
-    - $ref: "#/components/parameters/MetadataParam"
+    - $ref: "#/components/parameters/Skip"
+    - $ref: "#/components/parameters/Limit"
+    - $ref: "#/components/parameters/OrderBy"
+    - $ref: "#/components/parameters/Filter"
+    - $ref: "#/components/parameters/Deleted"
+    - $ref: "#/components/parameters/Metadata"
   responses:
     200:
       description: "Request OK."
@@ -54,10 +54,6 @@ post:
   responses:
     200:
       description: "Request OK."
-      headers:
-        - $ref: "#/components/headers/Limit"
-        - $ref: "#/components/headers/Remaining"
-        - $ref: "#/components/headers/Reset"
       content:
         application/json:
           schema:
@@ -85,10 +81,6 @@ put:
   responses:
     200:
       description: "Request OK."
-      headers:
-        - $ref: "#/components/headers/Limit"
-        - $ref: "#/components/headers/Remaining"
-        - $ref: "#/components/headers/Reset"
       content:
         application/json:
           schema:

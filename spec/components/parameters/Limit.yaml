@@ -1,4 +1,4 @@
-name: "LimitParam"
+name: "limit"
 description: "max records to return"
 in: "query"
 required: true

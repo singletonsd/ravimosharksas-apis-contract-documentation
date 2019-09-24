@@ -1,0 +1,7 @@
+name: "id"
+description: "id to delete or search"
+in: "path"
+required: true
+schema:
+  type: "integer"
+  format: "int64"

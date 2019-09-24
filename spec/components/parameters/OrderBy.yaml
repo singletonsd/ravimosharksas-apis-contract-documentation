@@ -1,4 +1,4 @@
-name: "OrderByParam"
+name: "orderBy"
 description: "order by property."
 in: "query"
 required: false
