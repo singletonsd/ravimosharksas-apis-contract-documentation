@@ -1,0 +1,95 @@
+get:
+  tags:
+    - "ImportedMachines"
+  summary: "Get all imported Machines."
+  description: "Get all imported Machines."
+  operationId: "getImportedMachines"
+  parameters:
+    - $ref: "#/components/parameters/Skip"
+    - $ref: "#/components/parameters/Limit"
+    - $ref: "#/components/parameters/OrderBy"
+    - $ref: "#/components/parameters/Filter"
+    - $ref: "#/components/parameters/Deleted"
+    - $ref: "#/components/parameters/Metadata"
+  responses:
+    200:
+      description: "Request OK."
+      headers:
+        - $ref: "#/components/headers/Limit"
+        - $ref: "#/components/headers/Remaining"
+        - $ref: "#/components/headers/Reset"
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              metadata:
+                $ref: "#/components/schemas/Metadata"
+              items:
+                type: "array"
+                items:
+                  $ref: "#/components/schemas/ImportedMachines"
+    204:
+      $ref: "#/components/responses/204"
+    400:
+      $ref: "#/components/responses/400"
+    401:
+      $ref: "#/components/responses/401"
+    404:
+      $ref: "#/components/responses/404"
+    405:
+      $ref: "#/components/responses/405"
+  x-swagger-router-controller: "ImportedMachines"
+post:
+  tags:
+    - "ImportedMachines"
+  summary: "Add one imported Machine."
+  description: "Add one imported Machine."
+  operationId: "addImportedMachine"
+  requestBody:
+    content:
+      application/json:
+        schema:
+          $ref: "#/components/schemas/ImportedMachines"
+  responses:
+    200:
+      description: "Request OK."
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/ImportedMachines"
+    400:
+      $ref: "#/components/responses/400"
+    401:
+      $ref: "#/components/responses/401"
+    404:
+      $ref: "#/components/responses/404"
+    405:
+      $ref: "#/components/responses/405"
+  x-swagger-router-controller: "ImportedMachines"
+put:
+  tags:
+    - "ImportedMachines"
+  summary: "Edit one imported Machine."
+  description: "Edit one imported Machine."
+  operationId: "editImportedMachine"
+  requestBody:
+    content:
+      application/json:
+        schema:
+          $ref: "#/components/schemas/ImportedMachines"
+  responses:
+    200:
+      description: "Request OK."
+      content:
+        application/json:
+          schema:
+            $ref: "#/components/schemas/ImportedMachines"
+    400:
+      $ref: "#/components/responses/400"
+    401:
+      $ref: "#/components/responses/401"
+    404:
+      $ref: "#/components/responses/404"
+    405:
+      $ref: "#/components/responses/405"
