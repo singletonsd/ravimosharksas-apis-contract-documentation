@@ -7,7 +7,7 @@ properties:
   machines:
     type: array
     items:
-      $ref: "#/definitions/Machines"
+      $ref: "#/components/schemas/Machines"
   client:
     type: string
   identification:
