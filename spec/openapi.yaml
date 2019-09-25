@@ -34,5 +34,6 @@ tags:
   - name: ImportedMachines
     description: Operations about imported machines.
 servers:
-  - url: 'http://localhost:8000/api/v1'
+  - url: 'http://localhost:8000'
   - url: 'https://ravimoshark.com/back/apis/contract/v1'
+  - url: 'https://ravimoshark.com/back/apis/contract/latest'
