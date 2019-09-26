@@ -4,9 +4,19 @@ properties:
   id:
     type: integer
     format: int64
-  piece:
+  refArticle:
     type: string
+  piece:
+    $ref: "#/components/schemas/Pieces"
   numSerie:
     type: string
   refContract:
     type: string
+  createdAt:
+    type: string
+    format: date
+  updatedAt:
+    type: string
+    format: date
+  deleted:
+    type: boolean

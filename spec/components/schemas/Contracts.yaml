@@ -4,12 +4,19 @@ properties:
   refContract:
     type: integer
     format: int64
-  machines:
+  locations:
     type: array
     items:
-      $ref: "#/components/schemas/Machines"
-  client:
+      $ref: "#/components/schemas/Locations"
+  idLocations:
+    type: array
+    items:
+      type: integer
+      format: int64
+  refClient:
     type: string
+  client:
+    $ref: "#/components/schemas/Clients"
   identification:
     type: string
   dateDebut:
@@ -30,4 +37,12 @@ properties:
   reviewed:
     type: boolean
   valid:
+    type: boolean
+  createdAt:
+    type: string
+    format: date
+  updatedAt:
+    type: string
+    format: date
+  deleted:
     type: boolean

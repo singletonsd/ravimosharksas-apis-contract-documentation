@@ -6,10 +6,22 @@ properties:
     format: int64
   identification:
     type: string
-  MachineId:
+  machine:
+    $ref: "#/components/schemas/Machines"
+  machineId:
     type: integer
     format: int64
   reviewed:
     type: boolean
+  contract:
+    $ref: "#/components/schemas/Contracts"
   refContract:
     type: string
+  createdAt:
+    type: string
+    format: date
+  updatedAt:
+    type: string
+    format: date
+  deleted:
+    type: boolean

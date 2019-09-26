@@ -1,0 +1,16 @@
+description: Client's contract.
+type: object
+properties:
+  id:
+    type: integer
+    format: int64
+  machine:
+    $ref: "#/components/schemas/Machines"
+  machineId:
+    type: integer
+    format: int64
+  refContract:
+    type: integer
+    format: int64
+  contract:
+    $ref: "#/components/schemas/Contracts"

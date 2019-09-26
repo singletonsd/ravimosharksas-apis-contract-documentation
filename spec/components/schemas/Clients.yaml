@@ -1,0 +1,10 @@
+description: Client minimum information.
+type: object
+properties:
+  refClient:
+    type: integer
+    format: int64
+  nom:
+    type: string
+  abrege:
+    type: string
