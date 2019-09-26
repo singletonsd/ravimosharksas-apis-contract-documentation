@@ -12,5 +12,6 @@ properties:
   refContract:
     type: integer
     format: int64
-  contract:
-    $ref: "#/components/schemas/Contracts"
+  # Avoid circle dependencies.
+  # contract:
+  #   $ref: "#/components/schemas/Contracts"
