@@ -1,4 +1,4 @@
-name: "Skip"
+name: "skip"
 description: "number of item to skip"
 in: "query"
 required: true
