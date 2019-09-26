@@ -1,4 +1,4 @@
-name: "SkipParam"
+name: "Skip"
 description: "number of item to skip"
 in: "query"
 required: true
