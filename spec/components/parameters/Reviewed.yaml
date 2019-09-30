@@ -3,5 +3,4 @@ description: "only reviewed data."
 in: "query"
 required: false
 schema:
-  type: "boolean"
-  default: true
+  $ref: "#/components/schemas/Reviewed"

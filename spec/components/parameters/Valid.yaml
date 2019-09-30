@@ -3,5 +3,4 @@ description: "Only valid data."
 in: "query"
 required: false
 schema:
-  type: "boolean"
-  default: true
+  $ref: "#/components/schemas/Valid"

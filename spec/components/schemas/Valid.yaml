@@ -1,0 +1,6 @@
+type: string
+default: VALID
+enum:
+  - VALID
+  - INVALID
+  - ALL

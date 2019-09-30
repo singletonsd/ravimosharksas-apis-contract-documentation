@@ -1,0 +1,6 @@
+type: string
+default: REVIEWED
+enum:
+  - REVIEWED
+  - NOT_REVIEWED
+  - ALL
