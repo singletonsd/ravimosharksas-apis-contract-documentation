@@ -1,0 +1,7 @@
+name: "reviewed"
+description: "only reviewed data."
+in: "query"
+required: false
+schema:
+  type: "boolean"
+  default: false
