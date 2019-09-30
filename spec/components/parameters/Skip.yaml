@@ -5,3 +5,4 @@ required: true
 schema:
   type: "integer"
   format: "int32"
+  default: 0
