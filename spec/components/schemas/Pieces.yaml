@@ -3,5 +3,5 @@ type: object
 properties:
   refArticle:
     type: string
-  designation:
+  name:
     type: string
