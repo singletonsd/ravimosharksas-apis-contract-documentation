@@ -12,6 +12,6 @@ properties:
   refContract:
     type: integer
     format: int64
-  # Avoid circle dependencies.
-  # contract:
-  #   $ref: "#/components/schemas/Contracts"
+  # TODO: check if swagger UI can avoid circle dependencies.
+  contract:
+    $ref: "#/components/schemas/Contracts"

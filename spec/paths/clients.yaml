@@ -1,96 +1,42 @@
 get:
   tags:
-    - "Clients"
-  summary: "Get all clients."
-  description: "Get all clients."
-  operationId: "getClients"
+    - Clients
+  summary: Get all clients.
+  description: Get all clients.
+  operationId: getClients
   parameters:
-    - $ref: "#/components/parameters/Skip"
-    - $ref: "#/components/parameters/Limit"
-    - $ref: "#/components/parameters/OrderBy"
-    - $ref: "#/components/parameters/Filter"
-    - $ref: "#/components/parameters/Deleted"
-    - $ref: "#/components/parameters/Metadata"
+    - $ref: '#/components/parameters/Skip'
+    - $ref: '#/components/parameters/Limit'
+    - $ref: '#/components/parameters/OrderBy'
+    - $ref: '#/components/parameters/Filter'
+    - $ref: '#/components/parameters/Deleted'
+    - $ref: '#/components/parameters/Metadata'
   responses:
-    200:
-      description: "Request OK."
+    '200':
+      description: Request OK.
       headers:
-        - $ref: "#/components/headers/Limit"
-        - $ref: "#/components/headers/Remaining"
-        - $ref: "#/components/headers/Reset"
+        - $ref: '#/components/headers/Limit'
+        - $ref: '#/components/headers/Remaining'
+        - $ref: '#/components/headers/Reset'
       content:
         application/json:
           schema:
             type: object
             properties:
               metadata:
-                $ref: "#/components/schemas/Metadata"
+                $ref: '#/components/schemas/Metadata'
               items:
-                type: "array"
+                type: array
                 items:
-                  $ref: "#/components/schemas/Clients"
-    204:
-      $ref: "#/components/responses/204"
-    400:
-      $ref: "#/components/responses/400"
-    401:
-      $ref: "#/components/responses/401"
-    404:
-      $ref: "#/components/responses/404"
-    405:
-      $ref: "#/components/responses/405"
-  x-swagger-router-controller: "Clients"
-# post:
-#   tags:
-#     - "Clients"
-#   summary: "Add one client."
-#   description: "Add one client."
-#   operationId: "addClient"
-#   requestBody:
-#     content:
-#       application/json:
-#         schema:
-#           $ref: "#/components/schemas/Clients"
-#   responses:
-#     200:
-#       description: "Request OK."
-#       content:
-#         application/json:
-#           schema:
-#             $ref: "#/components/schemas/Clients"
-#     400:
-#       $ref: "#/components/responses/400"
-#     401:
-#       $ref: "#/components/responses/401"
-#     404:
-#       $ref: "#/components/responses/404"
-#     405:
-#       $ref: "#/components/responses/405"
-#   x-swagger-router-controller: "Clients"
-# put:
-#   tags:
-#     - "Clients"
-#   summary: "Edit one client."
-#   description: "Edit one client."
-#   operationId: "editClient"
-#   requestBody:
-#     content:
-#       application/json:
-#         schema:
-#           $ref: "#/components/schemas/Clients"
-#   responses:
-#     200:
-#       description: "Request OK."
-#       content:
-#         application/json:
-#           schema:
-#             $ref: "#/components/schemas/Clients"
-#     400:
-#       $ref: "#/components/responses/400"
-#     401:
-#       $ref: "#/components/responses/401"
-#     404:
-#       $ref: "#/components/responses/404"
-#     405:
-#       $ref: "#/components/responses/405"
-#   x-swagger-router-controller: "Clients"
+                  $ref: '#/components/schemas/Clients'
+    '204':
+      $ref: '#/components/responses/204'
+    '400':
+      $ref: '#/components/responses/400'
+    '401':
+      $ref: '#/components/responses/401'
+    '404':
+      $ref: '#/components/responses/404'
+    '405':
+      $ref: '#/components/responses/405'
+  x-swagger-router-controller: Clients

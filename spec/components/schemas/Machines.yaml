@@ -8,10 +8,22 @@ properties:
     type: string
   piece:
     $ref: "#/components/schemas/Pieces"
+  # contract:
+  #   $ref: "#/components/schemas/Contracts"
+  # refContract:
+  #   type: string
   numSerie:
     type: string
-  refContract:
-    type: string
+  # TODO: check if swagger UI can avoid circle dependencies.
+  locations:
+    type: array
+    items:
+      $ref: "#/components/schemas/Locations"
+  idLocations:
+    type: array
+    items:
+      type: integer
+      format: int64
   createdAt:
     type: string
     format: date
