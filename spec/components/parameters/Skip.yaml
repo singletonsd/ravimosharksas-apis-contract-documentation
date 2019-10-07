@@ -1,7 +1,7 @@
 name: "skip"
 description: "number of item to skip"
 in: "query"
-required: true
+required: false
 schema:
   type: "integer"
   format: "int32"

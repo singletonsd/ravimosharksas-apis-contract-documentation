@@ -13,15 +13,24 @@ properties:
     items:
       type: integer
       format: int64
-  # machines:
-  #   type: array
-  #   items:
-  #     $ref: "#/components/schemas/Machines"
-  # idMachines:
-  #   type: array
-  #   items:
-  #     type: integer
-  #     format: int64
+  importedMachines:
+    type: array
+    items:
+      $ref: "#/components/schemas/ImportedMachines"
+  idImportedMachines:
+    type: array
+    items:
+      type: integer
+      format: int64
+  machines:
+    type: array
+    items:
+      $ref: "#/components/schemas/Machines"
+  idMachines:
+    type: array
+    items:
+      type: integer
+      format: int64
   refClient:
     type: string
   client:
