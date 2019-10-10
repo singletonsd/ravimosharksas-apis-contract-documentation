@@ -45,13 +45,15 @@ properties:
     format: date
   reconduction:
     type: string
-    format: ""
+    nullable: true
   loyer:
     type: number
     format: float
+    nullable: true
   miniconso:
     type: number
     format: float
+    nullable: true
   reviewed:
     type: boolean
   valid:

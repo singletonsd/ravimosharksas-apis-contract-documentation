@@ -48,6 +48,7 @@ post:
   description: "Add one imported Machine."
   operationId: "addImportedMachine"
   requestBody:
+    required: true
     content:
       application/json:
         schema:
@@ -75,6 +76,7 @@ put:
   description: "Edit one imported Machine."
   operationId: "editImportedMachine"
   requestBody:
+    required: true
     content:
       application/json:
         schema:

@@ -13,6 +13,7 @@ get:
     - $ref: "#/components/parameters/Metadata"
     - $ref: "#/components/parameters/Valid"
     - $ref: "#/components/parameters/Reviewed"
+    - $ref: "#/components/parameters/RefClientQuery"
   responses:
     200:
       description: "Request OK."
@@ -49,6 +50,7 @@ post:
   description: "Add one contract."
   operationId: "addContract"
   requestBody:
+    required: true
     content:
       application/json:
         schema:
@@ -76,6 +78,7 @@ put:
   description: "Edit one contract."
   operationId: "editContract"
   requestBody:
+    required: true
     content:
       application/json:
         schema:

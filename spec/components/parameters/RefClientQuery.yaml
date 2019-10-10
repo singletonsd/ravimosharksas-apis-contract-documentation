@@ -1,0 +1,6 @@
+name: "refClient"
+description: "Data from a desired contract"
+in: "query"
+required: false
+schema:
+  type: "string"
