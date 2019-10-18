@@ -11,6 +11,8 @@ get:
     - $ref: "#/components/parameters/Filter"
     - $ref: "#/components/parameters/Deleted"
     - $ref: "#/components/parameters/Metadata"
+    - $ref: "#/components/parameters/RefClientQuery"
+    - $ref: "#/components/parameters/RefContractQuery"
   responses:
     200:
       description: "Request OK."

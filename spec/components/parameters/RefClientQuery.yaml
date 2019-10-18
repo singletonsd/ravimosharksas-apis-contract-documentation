@@ -1,5 +1,5 @@
 name: "refClient"
-description: "Data from a desired contract"
+description: "Data from a desired client"
 in: "query"
 required: false
 schema:

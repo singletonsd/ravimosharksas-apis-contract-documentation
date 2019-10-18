@@ -1,0 +1,7 @@
+name: "refContract"
+description: "Data from a desired contract"
+in: "query"
+required: false
+schema:
+  type: "integer"
+  format: "int64"
