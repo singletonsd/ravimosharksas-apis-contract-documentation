@@ -29,10 +29,12 @@ externalDocs:
 tags:
   - name: Contracts
     description: Operations about contracts.
-  - name: Machines
-    description: Operations about machines.
   - name: ImportedMachines
     description: Operations about imported machines.
+  - name: Locations
+    description: Operations about locations.
+  - name: Machines
+    description: Operations about machines.
 servers:
   - url: 'http://localhost:8000'
   - url: 'https://ravimoshark.com/back/apis/contract/v1'
