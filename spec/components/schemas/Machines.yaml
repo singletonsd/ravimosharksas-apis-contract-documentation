@@ -8,10 +8,6 @@ properties:
     type: string
   piece:
     $ref: "#/components/schemas/Pieces"
-  contract:
-    $ref: "#/components/schemas/Contracts"
-  refContract:
-    type: string
   serialNumber:
     type: string
   # TODO: check if swagger UI can avoid circle dependencies.
