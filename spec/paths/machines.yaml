@@ -17,9 +17,12 @@ get:
     200:
       description: "Request OK."
       headers:
-        - $ref: "#/components/headers/Limit"
-        - $ref: "#/components/headers/Remaining"
-        - $ref: "#/components/headers/Reset"
+        Limit:
+          $ref: "#/components/headers/Limit"
+        Remaining:
+          $ref: "#/components/headers/Remaining"
+        Reset:
+          $ref: "#/components/headers/Reset"
       content:
         application/json:
           schema:
