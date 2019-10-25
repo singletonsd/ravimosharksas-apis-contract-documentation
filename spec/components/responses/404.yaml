@@ -1,8 +1,4 @@
 description: "Entity not found."
-headers:
-  - $ref: "#/components/headers/Limit"
-  - $ref: "#/components/headers/Remaining"
-  - $ref: "#/components/headers/Reset"
 content:
   application/json:
     schema:
